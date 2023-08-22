@@ -8,7 +8,7 @@ const Detail = () => {
   const [character, setCharacter] = useState({});
 
   useEffect(() => {
-    axios(`/rickandmorty/character/${id}`)
+    axios(`https://rym-back-production-cbdd.up.railway.app/rickandmorty/character/${id}`)
       .then((response) => response.data)
       .then((data) => {
         if (data.name) {

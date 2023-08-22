@@ -2,10 +2,10 @@ import { ADD_FAV, REMOVE_FAV, FILTER, ORDER } from "./action-types";
 import axios from "axios";
 
 export const addFav = (character) => {
-  
+  const endpoint = "https://rym-back-production-cbdd.up.railway.app/rickandmorty/fav";
   return async (dispatch) => {
     try {
-      const { data } = await axios.post("/rickandmorty/fav", character);
+      const { data } = await axios.post(endpoint, character);
 
       if (!data.length) throw Error("No hay favoritos");
 
@@ -20,9 +20,10 @@ export const addFav = (character) => {
 };
 
 export const removeFav = (id) => {
+  const endpoint = `https://rym-back-production-cbdd.up.railway.app/rickandmorty/fav/${id}`;
   return async (dispatch) => {
     try {
-      const { data } = await axios.delete(`/rickandmorty/fav/${id}`);
+      const { data } = await axios.delete(endpoint);
 
       return dispatch({
         type: REMOVE_FAV,

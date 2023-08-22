@@ -23,7 +23,7 @@ function App() {
 
     try {
       const { data } = await axios(
-        `/rickandmorty/character/${id}`
+        `https://rym-back-production-cbdd.up.railway.app/rickandmorty/character/${id}`
       );
 
       if (data.name) {
@@ -49,7 +49,7 @@ function App() {
       const { email, password } = userData;
 
       const { data } = await axios(
-        `/rickandmorty/login/?email=${email}&password=${password}`
+        `https://rym-back-production-cbdd.up.railway.app/rickandmorty/login?email=${email}&password=${password}`
       );
 
       const { access } = data;
