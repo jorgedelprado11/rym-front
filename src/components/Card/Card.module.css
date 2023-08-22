@@ -1,0 +1,69 @@
+.div {
+  width: 15rem;
+  height: 15rem;
+  background-color: rgba(174, 173, 160, 0.726);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 5rem 0;
+  position: relative;
+  border-radius: 0.4rem;
+  margin: 0.5rem;
+}
+
+.name {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 5rem;
+  left: 1rem;
+  background-color: rgb(236, 239, 213);
+  width: 80%;
+}
+
+.image {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.btn {
+  background-color: rgb(253, 52, 79);
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  border-radius: 0.25rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: rgb(237, 112, 129);
+}
+
+.btnFav {
+  font-size: 2rem;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.data {
+  font-size: 0.7rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.link:hover {
+  color: rgb(155, 151, 96);
+}
